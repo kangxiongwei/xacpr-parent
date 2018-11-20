@@ -37,6 +37,7 @@ dependencies {
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2")
 
     compile("mysql:mysql-connector-java:6.0.5")
+    compile("org.apache.mina:mina-core:2.0.19")
 
     //热交换
     compileOnly("org.springframework.boot:spring-boot-devtools")
