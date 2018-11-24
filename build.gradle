@@ -19,5 +19,14 @@ subprojects {
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
     }
+}
 
+task deploy(type: Copy) {
+    from('xacpr-core/build/libs') {
+        include '*.jar'
+    }
+    from('.') {
+        include '*.sh'
+    }
+    into('./target')
 }

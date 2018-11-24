@@ -30,7 +30,7 @@
             <i-header>
                 <i-menu mode="horizontal" theme="dark" active-name="1">
                     <img class="layout-logo" src="https://raw.githubusercontent.com/iview/iview/master/assets/logo.png">
-                    <p style="color: white; position: relative; left: 30px; float: left; font-size: 24px">BMS管理系统</p>
+                    <p style="color: white; position: relative; left: 30px; float: left; font-size: 24px">西安CPR管理系统</p>
                 </i-menu>
             </i-header>
             <i-layout style="padding: 0 50px; height: 100%; overflow-y: hidden">

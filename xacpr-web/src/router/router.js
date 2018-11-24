@@ -45,32 +45,18 @@ const routers = [
         ]
     },
     {
-        path: '/product',
-        name: 'product',
-        title: '产品管理',
+        path: '/device',
+        name: 'device',
+        title: '设备管理',
         icon: 'ios-navigate',
         component: Layout,
         children: [
             {
-                path: '/product-store',
-                name: 'product-store',
-                title: '库存管理',
-                icon: 'planet',
-                component: (resolve) => require(['../views/product/ProductStore.vue'], resolve)
-            },
-            {
-                path: '/product-order',
-                name: 'product-order',
-                title: '订单管理',
-                icon: 'fireball',
-                component: (resolve) => require(['../views/product/ProductOrder.vue'], resolve)
-            },
-            {
-                path: '/product-refund',
-                name: 'product-refund',
-                title: '退款管理',
-                icon: 'flame',
-                component: (resolve) => require(['../views/product/ProductRefund.vue'], resolve)
+                path: '/device-store',
+                name: 'device-store',
+                title: '设备管理',
+                icon: 'md-planet',
+                component: (resolve) => require(['../views/device/DeviceStore.vue'], resolve)
             }
         ]
     },
