@@ -1,0 +1,4 @@
+rootProject.name = 'xacpr-parent'
+
+include 'xacpr-core'
+include 'xacpr-web'
