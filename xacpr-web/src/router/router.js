@@ -55,7 +55,7 @@ const routers = [
                 path: '/device-store',
                 name: 'device-store',
                 title: '设备管理',
-                icon: 'md-planet',
+                icon: 'planet',
                 component: (resolve) => require(['../views/device/DeviceStore.vue'], resolve)
             }
         ]

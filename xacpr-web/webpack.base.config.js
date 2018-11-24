@@ -8,7 +8,7 @@ module.exports = {
         vendors: './src/vendors'
     },
     output: {
-        path: path.join(__dirname, './dist')
+        path: path.join(__dirname, '../xacpr-core/src/main/resources/static/dist')
     },
     module: {
         rules: [{

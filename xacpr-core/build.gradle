@@ -29,8 +29,13 @@ dependencies {
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
+jar {
+    enabled = true
+}
+
 bootJar {
     mainClassName = 'com.xacpr.core.Application'
+    classifier = 'boot'
 }
 
 task webCopy(type: Sync) {
@@ -45,4 +50,4 @@ task webCopy(type: Sync) {
 }
 
 //依赖拷贝前端代码到本地
-jar.dependsOn webCopy
+//compileJava.dependsOn webCopy
