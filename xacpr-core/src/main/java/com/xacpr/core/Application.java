@@ -16,8 +16,8 @@ import java.io.IOException;
  * Create by kangxiongwei on 2018/11/15 下午11:13
  */
 @RestController
-@SpringBootApplication(scanBasePackages = "com.xacpr.core.dao")
-@MapperScan("com.zhx.demo.dao")
+@SpringBootApplication(scanBasePackages = "com.xacpr.core")
+@MapperScan("com.xacpr.core.dao")
 public class Application {
 
     public static void main(String[] args) throws IOException {
