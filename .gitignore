@@ -3,4 +3,6 @@
 out/
 .gradle/
 target/
+build/
 
+xacpr-core/src/main/resources/static

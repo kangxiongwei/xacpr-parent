@@ -8,8 +8,8 @@ import App from './app.vue';
 import 'iview/dist/styles/iview.css';
 
 
-Vue.use(VueRouter, {});
-Vue.use(iView, {size: 'small'});
+Vue.use(VueRouter);
+Vue.use(iView);
 
 
 // 路由配置
