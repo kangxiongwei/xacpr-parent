@@ -74,8 +74,43 @@
                         key: 'deviceId'
                     },
                     {
-                        title: '本地IP&PORT',
+                        title: '本地IP端口',
                         key: 'clientIp'
+                    },
+                    {
+                        title: '转发IP端口',
+                        key: 'serverIp'
+                    },
+                    {
+                        title: '电压',
+                        key: 'voltageValue'
+                    },
+                    {
+                        title: '信号',
+                        key: 'signalValue'
+                    },
+                    {
+                        title: '电池',
+                        key: 'batteryValue'
+                    },
+                    {
+                        title: '异常',
+                        key: 'exception'
+                    },
+                    {
+                        title: '校验',
+                        key: 'valid'
+                    },
+                    {
+                        title: '上报时间',
+                        key: 'reportTime'
+                    },
+                    {
+                        title: '添加时间',
+                        key: 'addTime',
+                        render: (h, params) => {
+                            return h('div', this.formatDateTime(params.row.addTime))
+                        }
                     }
                 ]
             };
@@ -103,6 +138,9 @@
             },
             changeEndDate(val) {
                 this.formData.endTime = val;
+            },
+            formatDateTime(dateTime) {
+                return moment(dateTime).format("YYYY-MM-DD HH:mm:ss")
             }
         }
     }
