@@ -5,7 +5,7 @@ out/
 target/
 
 xacpr-core/build/
-xacpr-core/src/main/resources/static/
+xacpr-core/src/main/resources/static/dist
 xacpr-core/src/test/resources/
 xacpr-web/build/
 xacpr-web/src/main/
